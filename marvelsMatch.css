@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Marvel&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Marvel', sans-serif;
+    height: 750px;
+}
+
+/* instructions */
+#start {
+    height: 100vh;
+    background: url("https://cutewallpaper.org/21/marvel-background-hd/Marvel-Comics-HD-Wallpaper-Background-Image-1920x1080-.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@keyframes instructions{
+    from{
+       opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+#instructions{
+   height: 300px;
+   width: 450px;
+   background-color: white;
+   opacity: 0.9;
+   font-weight: bolder;
+   padding: 20px;
+   border-radius: 10px;
+   line-height: 22px;
+   transition: transform 0.1s;
+   transition: color 1s ease;
+   transition:  1s ease-in;
+   animation: instructions 1.5s ease-in-out;
+}
+
+/* play button and main menu button */
+#play {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+    top: 77%;
+    padding: 10px;
+    animation: playButton 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: playButton 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-delay: 1.5s;
+}
+@keyframes playButton {
+    0% {
+         transform: scale(0);
+         transform: scale(0);
+         opacity: 1;
+    }
+    100% {
+         transform: scale(1);
+         transform: scale(1);
+         opacity: 1;
+    }
+  }
+  @keyframes playButton {
+    0% {
+         transform: scale(0);
+         transform: scale(0);
+         opacity: 1;
+    }
+    100% {
+         transform: scale(1);
+         transform: scale(1);
+         opacity: 1;
+    }
+  }
+  
+#mainMenu{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    padding: 3px;
+    top: 91%;
+    animation: rotate 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: rotate 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-delay: 1.5s;
+}
+@-webkit-keyframes rotate {
+    0% {
+      transform: rotate(-360deg);
+         transform: rotate(-360deg);
+      opacity: 0;
+    }
+    100% {
+         transform: rotate(0);
+         transform: rotate(0);
+         opacity: 1;
+    }
+  }
+  @keyframes rotate {
+    0% {
+         transform: rotate(-360deg);
+         transform: rotate(-360deg);
+         opacity: 0;
+    }
+    100% {
+         transform: rotate(0);
+         transform: rotate(0);
+         opacity: 1;
+    }
+  }
+  
+#instructions:hover{
+    background-color: black;
+    color: white;
+    transform: scale(1.3);
+}
+#mainMenu:hover{
+    transform: scale(1.3);
+    background-color: red;
+}
+#play:hover{
+    transform: scale(1.3);
+    background-color: black;
+}
+#main {
+    height: 700px;
+    background: rgb(225,51,30);
+    background: linear-gradient(top, rgb(225,51,30) 0%, rgb(129,26,26) 50%, rgb(0,0,0) 100%);
+    background: linear-gradient(top, rgb(225,51,30) 0%, rgb(129,26,26) 50%, rgb(0,0,0) 100%);
+    background: linear-gradient(to bottom, rgb(225,51,30) 0%, rgb(129,26,26) 50%, rgb(0,0,0) 100%);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#main h2:nth-child(1) {
+    position: absolute;
+    left: 110px;
+    font-size: 2em;
+    top: 0px;
+    color: white;
+}
+
+#main #pointbox {
+    position: absolute;
+    left: 98px;
+    top: 50px;
+    width: 100px;
+    height: 60px;
+    font-size: 2.5em;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border: 1px solid white;
+}
+
+#main h2:nth-child(3) {
+    position: absolute;
+    left: 100px;
+    font-size: 3em;
+    top: 58%;
+    color: white;
+}
+
+#main #timebox {
+    position: absolute;
+    left: 34px;
+    width: 16%;
+    height: 30%;
+    border-radius: 10px;
+    bottom: 23px;
+    font-size: 7em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border: 1px solid white;
+}
+
+#main #reloadbtn {
+    position: absolute;
+    left: 71px;
+    width: 10%;
+    height: 9%;
+    font-size: 2em;
+    border-radius: 11px;
+    top: 31%;
+    transition: transform .2s;
+    transition: color 0.3s ease;
+    transition:  0.3s ease-in;
+}
+
+#timebox input.nums {
+    width: 100%;
+    height: 100%;
+    font-size: 4em;
+}
+
+button.btn:nth-child(5) {
+    position: absolute;
+    left: 45px;
+    width: 4%;
+    height: 6%;
+    font-size: 2em;
+    border-radius: 11px;
+    top: 46%;
+    transition: transform .2s;
+    transition: color 0.3s ease;
+    transition:  0.3s ease-in;
+}
+
+button.btn:nth-child(6) {
+    position: absolute;
+    left: 115px;
+    width: 4%;
+    height: 6%;
+    font-size: 2em;
+    border-radius: 11px;
+    top: 46%;
+    transition: transform .2s;
+    transition: color 0.3s ease;
+    transition:  0.3s ease-in;
+}
+
+button.btn:nth-child(7) {
+    position: absolute;
+    left: 188px;
+    width: 4%;
+    height: 6%;
+    font-size: 2em;
+    border-radius: 11px;
+    top: 46%;
+    transition: transform .2s;
+    transition: color 0.3s ease;
+    transition:  0.3s ease-in;
+}
+.btn:hover, #reloadbtn:hover{
+    color: rgb(252, 8, 8);
+    transform: scale(1.3);
+}
+
+#mainbox {
+    width: 100%;
+    height: 98vh;
+    display: grid;
+    grid-template-columns: repeat(4, 285px);
+    grid-template-rows: repeat(4, 170px);
+    position: absolute;
+    left: 25%;
+    grid-gap: 4px;
+    background-color: white;
+}
+
+#mainboxs {
+    width: 80%;
+    height: 100vh;
+    background: url("https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/997070/e2968d89827bd2a5d3772ef7c895cb10a52d80ba.jpg");
+    background-size: cover;
+    display: grid;
+    position: absolute;
+    left: 20%;
+    font-size: 5.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(252, 247, 247);
+    animation: linear forwards;
+}
+
+#mainbox .box {
+    background-image: url("logo.jpg");
+    font-size: 0em;
+    background-size: cover;
+    background-position: center;
+}
+
+/* animations for start slide down and up, names from js*/
+
+@keyframes my {     
+    0% {
+        top: -100%;
+    }
+    100% {
+        top: 0%;
+    }
+}
+
+@keyframes mys {
+    0% {
+        top: 0%;
+    }
+    100% {
+        top: 100%;
+    }
+}

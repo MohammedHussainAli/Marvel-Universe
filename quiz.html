@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Universe</title>
+    <link rel="stylesheet" href="quiz.css">
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAKCpoAAAAAAAxWigA1PrYABaLuAA1d5gAyKoQALArGAAUQXAAHEmIAHAypAA8PYgAODmgAFxJiAAXV7gBPqvMAMip8AAUQSwBB1e0AFU+aAAd65AAKuOAAEiePADyRswAYPsEAHrXgADBLlwAYiOoAEFXrAAWg8wAQW+sAUu/8ACUM1wAFqfMACgpeACFT3AAlENoABbHwADAH0QAiG9cAHVXrAC8N0QAa2uwAMgrRABsq1wAFuPMABYXiAB4IqAAQcOsAJReNAAXK8wAF0PMABdPzAFJ11QASjegACp/oAB0VbQAjDswAOommABJc5gAFElMAKgXVABCb7gASB68ANQXVACAYiAAFKlwAJQ6gABV/7ACa+PwAKhK1ACFG2wAjL6AAIB1rADLi/AAHDWAADAxmABIVrQAKFWYAHS3ZABUnmwAFkOoAPMLlABpFdwAbPugAIj+AACIVyAA/r78ABaXzABtN6AAQXesABbfzACiqugAlG9oAGzDaABUSZwAVFWcABdLzAEU4jwAqDbEAJcDYAAqb8QCC4vwADA+mACi17QA90PUALSqcACUbyQAKCmIADW3mAC8VwAAOCGUAIiJzAAoRZQAKveIADg5lABst2wAVau8ADw9oAB0w2wAQEGsABcruABIQawATEGsAGxBrABaDogAowOIAGhqAAGJapAANDGAAG9vrAEWo4gA1EM0ADRJpABsw3AASEGMADCVaACUQqgAbQeIABZvzACUF0QBFwvEAJRLCAAWq6gBIyOgATZy/ABoaeAAPqOQAMBW5AAWw8wAGFlsAHIigAA8VsQAlze8AJU+PAA4RZwASDWQATIyrABIQbQAbPN0Af9X8AAVl2gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEBAQGMRiQ9KYABAQEBAQEBARAHSmEzM3mCmAYBAQEBAQoSMlyWTJ00NA5SLwEBAUGQMzMaeHpJMzORcoNiAQEAlRVbaUJTmpWVS4gtTQGSGZdkWJWVjyWVIXEMfWgBTx1XDZM3fqBmi4sieFUElFk+EXgPUTYJCy4uInhgLiZ1RDx4hRsUE5wwME54X20rZTs6eHg1WgWHHhxseHChbhcjAnubcxhUUJ+KeHwDRwEBH4YInnh/XnR3Xng4LFYBAQEWXXZ4eI4nXV0xaz8BAQEBAUg5Q2+BjCAgjGdqAQEBAQEBAWOEjIxAiSgBAQEBAQEBAQEBRZkqjQEBAQEBAfgfAADgBwAAwAMAAIABAACAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAQAAgAEAAMADAADgAwAA+A8AAPw/AAA=" rel="icon" type="image/x-icon" />
+</head>
+<body>
+  <img src="https://cdn.europosters.eu/image/1300/posters/marvel-comic-here-come-the-heroes-i34927.jpg" alt="bag" width="100%">
+  <img id="trade" src="./backgrounds/trade.jpg" alt="" width="6%">
+  <div id="timer"><h2 id="count"></h2><h1 id="marvel">MARVEL QUIZ</h1></div>
+    <div class="quiz-container" id="quiz">
+
+        <div class="quiz-header">
+          
+          <h2 id="question">Question Text</h2>
+          <ul>
+            <li>
+              <input type="radio" name="answer" id="ans1" class="answer">
+              <label for="ans1" id="option1"></label>
+            </li>
+    
+            <li>
+              <input type="radio" name="answer" id="ans2" class="answer">
+              <label for="ans2" id="option2"></label>
+            </li>
+    
+            <li>
+              <input type="radio" name="answer" id="ans3" class="answer">
+              <label for="ans3" id="option3"></label>
+            </li>
+    
+            <li>
+              <input type="radio" name="answer" id="ans4" class="answer">
+              <label for="ans4" id="option4"></label>
+            </li>
+    
+          </ul>
+        </div>
+    
+        <button id="submit">SUBMIT</button><br>
+        <button id="reload2" onclick="reload2()">RELOAD</button>
+    
+      </div>
+
+      <div id="buttons">
+      <button id="mainMenu" onclick="mainmenu()" onmousedown="sound.play()"><img src="https://static.thenounproject.com/png/251451-200.png" alt="back" width="100%"></button>
+      <button id="play" onclick="home()" onmousedown="sound.play()"><img src="https://www.inventicons.com/uploads/iconset/1201/wm/512/interface-Options-Multimedia-Option-option-90.png" width="100%"></button>
+      </div>
+      <audio id="sound1"><source src="./Music/winSound.wav"/></audio>
+      <audio id="sound2"><source src="./Music/lost.mp3"/></audio>
+      <audio id="sound3"><source src="./Music/delayCount.mp3"/></audio>
+      <script src="quiz.js"></script>
+      <script src="app.js"></script>
+</body>
+</html>

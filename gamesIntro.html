@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Universe</title>
+    <link rel="stylesheet" href="gamesIntro.css">
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAKCpoAAAAAAAxWigA1PrYABaLuAA1d5gAyKoQALArGAAUQXAAHEmIAHAypAA8PYgAODmgAFxJiAAXV7gBPqvMAMip8AAUQSwBB1e0AFU+aAAd65AAKuOAAEiePADyRswAYPsEAHrXgADBLlwAYiOoAEFXrAAWg8wAQW+sAUu/8ACUM1wAFqfMACgpeACFT3AAlENoABbHwADAH0QAiG9cAHVXrAC8N0QAa2uwAMgrRABsq1wAFuPMABYXiAB4IqAAQcOsAJReNAAXK8wAF0PMABdPzAFJ11QASjegACp/oAB0VbQAjDswAOommABJc5gAFElMAKgXVABCb7gASB68ANQXVACAYiAAFKlwAJQ6gABV/7ACa+PwAKhK1ACFG2wAjL6AAIB1rADLi/AAHDWAADAxmABIVrQAKFWYAHS3ZABUnmwAFkOoAPMLlABpFdwAbPugAIj+AACIVyAA/r78ABaXzABtN6AAQXesABbfzACiqugAlG9oAGzDaABUSZwAVFWcABdLzAEU4jwAqDbEAJcDYAAqb8QCC4vwADA+mACi17QA90PUALSqcACUbyQAKCmIADW3mAC8VwAAOCGUAIiJzAAoRZQAKveIADg5lABst2wAVau8ADw9oAB0w2wAQEGsABcruABIQawATEGsAGxBrABaDogAowOIAGhqAAGJapAANDGAAG9vrAEWo4gA1EM0ADRJpABsw3AASEGMADCVaACUQqgAbQeIABZvzACUF0QBFwvEAJRLCAAWq6gBIyOgATZy/ABoaeAAPqOQAMBW5AAWw8wAGFlsAHIigAA8VsQAlze8AJU+PAA4RZwASDWQATIyrABIQbQAbPN0Af9X8AAVl2gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEBAQGMRiQ9KYABAQEBAQEBARAHSmEzM3mCmAYBAQEBAQoSMlyWTJ00NA5SLwEBAUGQMzMaeHpJMzORcoNiAQEAlRVbaUJTmpWVS4gtTQGSGZdkWJWVjyWVIXEMfWgBTx1XDZM3fqBmi4sieFUElFk+EXgPUTYJCy4uInhgLiZ1RDx4hRsUE5wwME54X20rZTs6eHg1WgWHHhxseHChbhcjAnubcxhUUJ+KeHwDRwEBH4YInnh/XnR3Xng4LFYBAQEWXXZ4eI4nXV0xaz8BAQEBAUg5Q2+BjCAgjGdqAQEBAQEBAWOEjIxAiSgBAQEBAQEBAQEBRZkqjQEBAQEBAfgfAADgBwAAwAMAAIABAACAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAQAAgAEAAMADAADgAwAA+A8AAPw/AAA=" rel="icon" type="image/x-icon" />
+</head>
+<body>
+    <!-- heading and logo section -->
+    <section>
+    <div id="gamesBackground">
+        <img class="bottom" src="https://s1.1zoom.me/b5050/244/Elizabeth_Olsen_Page_semi-protected__Avengers_549746_3840x2160.jpg" alt="games bg" width="100%">
+        <img class="top" src="https://wallpapers-hub.art/wallpaper-images/139515.jpg" width="100%">
+    </div>
+    </section>
+    <img id="logo" src="./backgrounds/trade.jpg" alt="tradeMark" width="5%">
+    <h1 id="heading">MARVEL &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; UNIVERSE</h1>
+
+    <!-- game1&2 headings-->
+    <h2 id="heading1">Marvel'S Match</h2>
+    <h2 id="heading2">Marvel'S Quiz</h2>
+    
+    <!-- Match game container -->
+    <div id="marvelsMatch">
+     
+        <img src="./backgrounds/./newcard.jpg" alt="match" width="100%" height="100%" style="border-radius: 20px;">
+
+    </div>
+    
+    <!-- quiz game container -->
+    <div id="marvelsQuiz">
+        <img src="https://cdn.thelivemirror.com/wp-content/uploads/2019/10/marvel-superhero-quiz.jpg" alt="quiz" width="100%" height="100%" style="border-radius: 20px;">
+
+    </div>
+
+    <!-- match & quiz buttons -->
+    <div id="playNow1">
+        <h3>PLay Now</h3>
+        <button id="play1" onclick="playNow()" onmousedown="sound.play()"><img src="./backgrounds/playlogo.png" alt="playButton" width="100%"></button>
+    </div>
+    <div id="playNow2">
+        <h3>PLay Now</h3>
+        <button id="play2" onclick="quizbtn()" onmousedown="sound.play()"><img src="./backgrounds/playlogo.png" alt="playButton" width="100%"></button>
+    </div>
+    <button id="play" onclick="home()" onmousedown="sound.play()"><img src="https://www.inventicons.com/uploads/iconset/1201/wm/512/interface-Options-Multimedia-Option-option-90.png" width="100%"></button>
+    
+
+    <!-- animations are needed to be done on match and quiz divs -->
+    <audio src="Music/bg2.mp3" autoplay loop></audio>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Universe</title>
+    <link rel="stylesheet" href="marvelsMatch.css">
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAKCpoAAAAAAAxWigA1PrYABaLuAA1d5gAyKoQALArGAAUQXAAHEmIAHAypAA8PYgAODmgAFxJiAAXV7gBPqvMAMip8AAUQSwBB1e0AFU+aAAd65AAKuOAAEiePADyRswAYPsEAHrXgADBLlwAYiOoAEFXrAAWg8wAQW+sAUu/8ACUM1wAFqfMACgpeACFT3AAlENoABbHwADAH0QAiG9cAHVXrAC8N0QAa2uwAMgrRABsq1wAFuPMABYXiAB4IqAAQcOsAJReNAAXK8wAF0PMABdPzAFJ11QASjegACp/oAB0VbQAjDswAOommABJc5gAFElMAKgXVABCb7gASB68ANQXVACAYiAAFKlwAJQ6gABV/7ACa+PwAKhK1ACFG2wAjL6AAIB1rADLi/AAHDWAADAxmABIVrQAKFWYAHS3ZABUnmwAFkOoAPMLlABpFdwAbPugAIj+AACIVyAA/r78ABaXzABtN6AAQXesABbfzACiqugAlG9oAGzDaABUSZwAVFWcABdLzAEU4jwAqDbEAJcDYAAqb8QCC4vwADA+mACi17QA90PUALSqcACUbyQAKCmIADW3mAC8VwAAOCGUAIiJzAAoRZQAKveIADg5lABst2wAVau8ADw9oAB0w2wAQEGsABcruABIQawATEGsAGxBrABaDogAowOIAGhqAAGJapAANDGAAG9vrAEWo4gA1EM0ADRJpABsw3AASEGMADCVaACUQqgAbQeIABZvzACUF0QBFwvEAJRLCAAWq6gBIyOgATZy/ABoaeAAPqOQAMBW5AAWw8wAGFlsAHIigAA8VsQAlze8AJU+PAA4RZwASDWQATIyrABIQbQAbPN0Af9X8AAVl2gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEBAQGMRiQ9KYABAQEBAQEBARAHSmEzM3mCmAYBAQEBAQoSMlyWTJ00NA5SLwEBAUGQMzMaeHpJMzORcoNiAQEAlRVbaUJTmpWVS4gtTQGSGZdkWJWVjyWVIXEMfWgBTx1XDZM3fqBmi4sieFUElFk+EXgPUTYJCy4uInhgLiZ1RDx4hRsUE5wwME54X20rZTs6eHg1WgWHHhxseHChbhcjAnubcxhUUJ+KeHwDRwEBH4YInnh/XnR3Xng4LFYBAQEWXXZ4eI4nXV0xaz8BAQEBAUg5Q2+BjCAgjGdqAQEBAQEBAWOEjIxAiSgBAQEBAQEBAQEBRZkqjQEBAQEBAfgfAADgBwAAwAMAAIABAACAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAQAAgAEAAMADAADgAwAA+A8AAPw/AAA=" rel="icon" type="image/x-icon" />
+</head>
+<body>
+    <section id="start">
+        <div id="instructions">
+            <h1 style="font-weight: bolder;" id="headingInstruct">Instructions</h1><hr>
+            <ul>
+                <li>Please set the timer before strating the game, if timer is not set then the game will not start.</li>
+                <li>To set the timer please select any timer value i.e 30, 60 or 90.</li>
+                <li>90--> Easy Level</li>
+                <li>60--> Medium Level</li>
+                <li>30--> Hard Level</li>
+                <li>You need to match all the cards wuth their pairs to get points.</li>
+                <li>To match, tap the cards and cards will get flipped and shows the character. Keep the shown character position in the memory and flip the cards again and find the match. </li>
+                <li>Complete the task within the selected time to win!</li>
+            </ul>
+        </div>
+        <button id="play" onmousedown="sound.play()"><img src="https://img.icons8.com/fluency/48/000000/play.png"/></button>
+        <button id="mainMenu" onclick="mainmenu()" onmousedown="sound.play()"><img src="https://static.thenounproject.com/png/251451-200.png" alt="back" width="100%"></button>
+    </section>
+    
+       <!-- side pannel and controls -->
+    <section id="main">
+        <h2>Points</h2>
+        <div id="pointbox"></div>
+        <h2>Timer</h2>
+        <div id="timebox"></div>
+        <button class="btn" onmousedown="sound.play()">30</button>
+        <button class="btn" onmousedown="sound.play()">60</button>
+        <button class="btn" onmousedown="sound.play()">90</button>
+        <button id="reloadbtn" onmousedown="sound.play()">Reset</button>
+        
+
+        <!-- game Pannel -->
+        <div id="mainbox">
+
+        </div>
+
+        <!-- reminder -->
+        <div id="mainboxs">
+            Please set the timer!
+        </div>
+
+    </section>
+    <audio src="Music/matchbg.mp3" autoplay loop></audio>
+    <script src="match.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

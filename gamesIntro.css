@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Marvel&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Marvel', sans-serif;
+}
+#gameBackground{
+    position: relative;
+    /* opacity: 0.8; */
+}
+#logo{
+    position: absolute;
+    top: 3.5%;
+    left:47%;
+    border-radius: 50%;
+    animation: first 1.5s ease-in-out forwards;
+}
+
+/* logo animations */
+@keyframes first{
+    from{
+        top: -100vw;
+    }
+    to{
+        top: 3.5%;
+    }
+}
+#heading{
+    position: absolute;
+    font-size: 4em;
+    top: 3%;
+    left: 30%;
+    color: white;
+    letter-spacing: 4px;
+    text-shadow: 0 -1px 4px rgb(255, 251, 251), 0 -2px 10px rgb(243, 10, 10), 0 -10px 20px #ff0000, 0 -18px 40px #F00;
+    color: #000000;
+}
+
+/* heading animations */
+#heading1{
+    position: absolute;
+    top: 22%;
+    left: 14%;
+    background: rgb(225,51,30);
+    background: linear-gradient(top, rgb(225,51,30) 0%, rgb(129,26,26) 50%, rgb(0,0,0) 100%);
+    background: linear-gradient(top, rgb(225,51,30) 0%, rgb(129,26,26) 50%, rgb(0,0,0) 100%);
+    background: linear-gradient(to bottom, rgb(225,51,30) 0%, rgb(129,26,26) 50%, rgb(0,0,0) 100%);
+    color: white;
+    width: 150px;
+    height: 50px;
+    padding: 8px;
+    border-radius: 10px;
+    text-align: center;
+    animation: match 2.5s ease-in-out forwards;
+}
+@keyframes match{
+    from{
+        left: -100%;
+    }
+    to{
+       left:14%;
+    }
+}
+#heading2{
+    position: absolute;
+    top: 22%;
+    right: 14%;
+    background: rgb(225,51,30);
+    background: linear-gradient(top, rgb(225,51,30) 0%, rgb(129,26,26) 50%, rgb(0,0,0) 100%);
+    background: linear-gradient(top, rgb(225,51,30) 0%, rgb(129,26,26) 50%, rgb(0,0,0) 100%);
+    background: linear-gradient(to bottom, rgb(225,51,30) 0%, rgb(129,26,26) 50%, rgb(0,0,0) 100%);
+    color: white;
+    width: 150px;
+    height: 50px;
+    padding: 8px;
+    border-radius: 10px;
+    text-align: center;
+    animation: quiz 2.5s ease-in-out forwards
+
+}
+@keyframes quiz{
+    from{
+       right: -100%;
+    }
+    to{
+       right: 14%;
+    }
+}
+/* box animation */
+#marvelsMatch{
+    position: absolute;
+    top: 32%;
+    left: 2%; 
+    height: 500px;
+    width: 500px;
+    opacity: 0.9;
+    animation: marvelsMatch 3.5s ease-in-out forwards
+}
+@keyframes marvelsMatch {
+    from{
+        left: -100%;
+    }
+    to{
+        left: 2%;
+    }
+}
+#marvelsQuiz{
+    position: absolute;
+    top: 32%;
+    right: 2.5%;
+    height: 500px;
+    width: 500px;
+    animation: marvelsQuiz 3.5s ease-in-out forwards
+}
+@keyframes marvelsQuiz{
+    from{
+        right: -100%;
+    }
+    to{
+        right: 2.5%;
+    }
+}
+/* buttons */
+#playNow1{
+    position: absolute;
+    top: 105%;
+    left: 13%;
+    height: 70px;
+    width: 158px;
+    border-radius: 10px;
+    border: 2px solid wheat;
+    background: rgb(225,51,30);
+    background: linear-gradient(top, rgb(225,51,30) 0%, rgb(129,26,26) 50%, rgb(0,0,0) 100%);
+    background: linear-gradient(top, rgb(225,51,30) 0%, rgb(129,26,26) 50%, rgb(0,0,0) 100%);
+    background: linear-gradient(to bottom, rgb(225,51,30) 0%, rgb(129,26,26) 50%, rgb(0,0,0) 100%);
+    text-align: center;
+    padding: 2px;
+    font-weight: bolder;
+    font-size: 1.3em;
+    transition: color 0.5s ease;
+    transition:  0.5s ease-in;
+    transition: transform .2s;
+}
+#play1{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    top: 45%;
+    left: 38%;
+}
+#playNow2{
+    position: absolute;
+    top: 105%;
+    left: 77%;
+    height: 70px;
+    width: 158px;
+    border-radius: 10px;
+    border: 2px solid wheat;
+    background: rgb(225,51,30);
+    background: linear-gradient(top, rgb(225,51,30) 0%, rgb(129,26,26) 50%, rgb(0,0,0) 100%);
+    background: linear-gradient(top, rgb(225,51,30) 0%, rgb(129,26,26) 50%, rgb(0,0,0) 100%);
+    background: linear-gradient(to bottom, rgb(225,51,30) 0%, rgb(129,26,26) 50%, rgb(0,0,0) 100%);
+    text-align: center;
+    padding: 2px;
+    font-weight: bolder;
+    font-size: 1.3em;
+    transition: color 0.5s ease;
+    transition:  0.5s ease-in;
+    transition: transform .2s;
+}
+#play2{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    top: 45%;
+    left: 38%;
+}
+#playNow1:hover , #playNow2:hover{
+    background-color: black;
+    color: white;
+    transform: scale(1.2);
+}
+
+/* animations */
+section {
+    position: relative;
+  }
+  
+  section img {
+      position: absolute;
+  }
+  
+  .top {
+      animation-name: fade;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      animation-duration: 5s;
+      animation-direction: alternate;
+  }
+  
+  @keyframes fade {
+      0% {
+          opacity: 1;
+      }
+      25% {
+          opacity: 1;
+      }
+      75% {
+          opacity: 0;
+      }
+      100% {
+          opacity: 0;
+      }
+  }
+
+  #play {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+    top: 105%;
+    left: 48%;
+    padding: 8px;
+    padding-left: 10px;
+    transition: transform .2s;
+  }
+  #play:hover{
+    transform: scale(1.2);
+    background-color: rgb(245, 8, 8);
+  }
